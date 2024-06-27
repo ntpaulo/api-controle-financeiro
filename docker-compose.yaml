@@ -1,0 +1,9 @@
+services:
+  banco-dados-controle:
+    image: postgres:12-alpine
+    ports:
+      - "5433:5432"
+    environment:
+      POSTGRES_DB: controle-financeiro-db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
